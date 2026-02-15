@@ -1,7 +1,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <img src="../../Default/Assets/Img/logo.svg" alt="Logo" class="logo-img">
+            <img src="/App/Default/Assets/Img/logo.svg" alt="Logo" class="logo-img">
             <span class="logo-text"><?= NOME_SITE ?></span>
         </div>
 
