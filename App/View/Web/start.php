@@ -2,9 +2,7 @@
 
 <?php include VIEW . "Include/inc_navbar.php" ?>
 
-<div class="alert alert-warning d-none" role="alert">
-    A simple warning alert—check it out!
-</div>
+<?php include VIEW . "Include/inc_msg.php" ?>
 
 <main class="flex-shrink-0 py-5 mt-5">
 

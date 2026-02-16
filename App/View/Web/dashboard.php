@@ -1,6 +1,6 @@
-<?php include VIEW . "Include/inc_admin_head.php" ?>
+<?php include VIEW . "Include/inc_head.php" ?>
 
-<?php include VIEW . "Include/inc_admin_navbar.php" ?>
+<?php include VIEW . "Include/inc_navbar.php" ?>
 
 <?php include VIEW . "Include/inc_msg.php" ?>
 
@@ -207,4 +207,5 @@
 </main>
 
 
-<?php include VIEW . "Include/inc_admin_footer.php" ?>
+
+<?php include VIEW . "Include/inc_footer.php" ?>

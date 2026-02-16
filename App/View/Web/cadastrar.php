@@ -1,16 +1,17 @@
-<?php include VIEW . "Include/inc_admin_head.php" ?>
+<?php include VIEW . "Include/inc_head.php" ?>
 
-<?php include VIEW . "Include/inc_admin_navbar.php" ?>
+<?php include VIEW . "Include/inc_navbar.php" ?>
 
 <?php include VIEW . "Include/inc_msg.php" ?>
 
 <main class="flex-grow-1 d-flex align-items-center py-5">
+    
     <div class="container">
         <div class="row justify-content-center">
 
             <div class="col-11 col-md-6 col-lg-4 mt-1">
 
-                <h1 class="mb-5 text-center"><?= $h1_titulo ?></h1>
+                <h1 class="mb-4 text-center"><?= $h1_titulo ?></h1>
 
                 <form>
                     <div class="mb-3">
@@ -65,4 +66,5 @@
 </main>
 
 
-<?php include VIEW . "Include/inc_admin_footer.php" ?>
+
+<?php include VIEW . "Include/inc_footer.php" ?>

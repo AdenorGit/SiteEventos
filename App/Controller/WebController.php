@@ -14,7 +14,7 @@ class WebController
     public function login()
     {
         $title = "Titulo da Página";
-        $titulo_principal = "Titulo Principal";
+        $h1_titulo = "Login";
         
         require VIEW . "Web/login.php";
     }
@@ -22,17 +22,16 @@ class WebController
     public function cadastrar()
     {
         $title = "Titulo da Página";
-        $titulo_principal = "Titulo Principal";
-        
+        $h1_titulo = "Cadastrar";        
         require VIEW . "Web/cadastrar.php";
     }
 
     public function dashboard()
     {
         $title = "Titulo da Página";
-        $titulo_principal = "Titulo Principal";
-        
-        require VIEW . "Web/cadastrar.php";
+        $h1_titulo = "Dashboard";    
+
+        require VIEW . "Web/dashboard.php";
     }
 
     public function logout()
