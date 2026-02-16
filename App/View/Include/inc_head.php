@@ -14,4 +14,4 @@
     <script src="../../../Public/Assets/Js/script.js" defer></script>
         
 </head>
-<body>
+<body class="d-flex flex-column vh-100 bg-body">

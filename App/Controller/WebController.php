@@ -6,9 +6,7 @@ class WebController
 {
     public function start()
     {
-        $title = "Titulo da Página";
-        $titulo_principal = "Titulo Principal";
-        $titulo_start = "Site de Eventos";
+        $title = "EVENTIFY - Site de Eventos";
         
         require VIEW . "Web/start.php";
     }
@@ -56,6 +54,14 @@ class WebController
         $titulo_admin = "Sistema de Gerenciamento";
         
         require VIEW . "Admin/cadastrar.php";
+    }
+
+    public function adminDashboard()
+    {
+        $title = "Administração";
+        $titulo_admin = "Sistema de Gerenciamento";
+        
+        require VIEW . "Admin/dashboard.php";
     }
 
     public function adminLogout()
