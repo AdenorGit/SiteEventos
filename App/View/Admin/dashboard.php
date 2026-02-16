@@ -14,7 +14,7 @@
 
                 <h1 class="mb-5 text-center"><?= $h1_titulo ?></h1>
 
-                <div style="max-height: 420px; overflow-y: auto;">
+                <div style="max-height: 434px; overflow-y: auto;">
                     <table class="table">
                         <thead class="sticky-top table-success">
                             <tr>
@@ -34,71 +34,168 @@
                                 <td>admin@gmail.com</td>
                                 <td>Administrador</td>
                                 <td>Ativo</td>
-                                <td><button>Editar</button></td>
-                                <td><button>Excluir</button></td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <th scope="row">2</th>
                                 <td>Adenor Sousa</td>
                                 <td>adenor@gmail.com</td>
                                 <td>Usuário</td>
                                 <td>Ativo</td>
-                                <td><button>Editar</button></td>
-                                <td><button>Excluir</button></td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
-                             <tr>
-                                <th scope="row">1</th>
-                                <td>João Ferreira</td>
-                                <td>joao@gmail.com</td>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>José Sousa</td>
+                                <td>jose@gmail.com</td>
                                 <td>Usuário</td>
                                 <td>Inativo</td>
-                                <td><button>Editar</button></td>
-                                <td><button>Excluir</button></td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
-                             <tr>
-                                <th scope="row">1</th>
-                                <td>Administrador</td>
-                                <td>admin@gmail.com</td>
-                                <td>Administrador</td>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Adenor Sousa</td>
+                                <td>adenor@gmail.com</td>
+                                <td>Usuário</td>
                                 <td>Ativo</td>
-                                <td><button>Editar</button></td>
-                                <td><button>Excluir</button></td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
-                             <tr>
-                                <th scope="row">1</th>
-                                <td>Administrador</td>
-                                <td>admin@gmail.com</td>
-                                <td>Administrador</td>
-                                <td>Ativo</td>
-                                <td><button>Editar</button></td>
-                                <td><button>Excluir</button></td>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>José Sousa</td>
+                                <td>jose@gmail.com</td>
+                                <td>Usuário</td>
+                                <td>Inativo</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
-                             <tr>
-                                <th scope="row">1</th>
-                                <td>Administrador</td>
-                                <td>admin@gmail.com</td>
-                                <td>Administrador</td>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Adenor Sousa</td>
+                                <td>adenor@gmail.com</td>
+                                <td>Usuário</td>
                                 <td>Ativo</td>
-                                <td><button>Editar</button></td>
-                                <td><button>Excluir</button></td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
-                             <tr>
-                                <th scope="row">1</th>
-                                <td>Administrador</td>
-                                <td>admin@gmail.com</td>
-                                <td>Administrador</td>
-                                <td>Ativo</td>
-                                <td><button>Editar</button></td>
-                                <td><button>Excluir</button></td>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>José Sousa</td>
+                                <td>jose@gmail.com</td>
+                                <td>Usuário</td>
+                                <td>Inativo</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
-                             <tr>
-                                <th scope="row">1</th>
-                                <td>Administrador</td>
-                                <td>admin@gmail.com</td>
-                                <td>Administrador</td>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Adenor Sousa</td>
+                                <td>adenor@gmail.com</td>
+                                <td>Usuário</td>
                                 <td>Ativo</td>
-                                <td><button>Editar</button></td>
-                                <td><button>Excluir</button></td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>José Sousa</td>
+                                <td>jose@gmail.com</td>
+                                <td>Usuário</td>
+                                <td>Inativo</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Adenor Sousa</td>
+                                <td>adenor@gmail.com</td>
+                                <td>Usuário</td>
+                                <td>Ativo</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>José Sousa</td>
+                                <td>jose@gmail.com</td>
+                                <td>Usuário</td>
+                                <td>Inativo</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Adenor Sousa</td>
+                                <td>adenor@gmail.com</td>
+                                <td>Usuário</td>
+                                <td>Ativo</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>José Sousa</td>
+                                <td>jose@gmail.com</td>
+                                <td>Usuário</td>
+                                <td>Inativo</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
                             </tr>
                             
                         </tbody>
