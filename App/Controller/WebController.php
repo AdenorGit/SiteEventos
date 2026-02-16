@@ -43,7 +43,7 @@ class WebController
     public function admin()
     {
         $title = "Administração";
-        $titulo_admin = "Sistema de Gerenciamento";
+        $h1_titulo = "Login";
         
         require VIEW . "Admin/admin.php";
     }
@@ -51,7 +51,7 @@ class WebController
     public function adminCadastrar()
     {
         $title = "Administração";
-        $titulo_admin = "Sistema de Gerenciamento";
+        $h1_titulo = "Cadastrar";
         
         require VIEW . "Admin/cadastrar.php";
     }
@@ -59,7 +59,7 @@ class WebController
     public function adminDashboard()
     {
         $title = "Administração";
-        $titulo_admin = "Sistema de Gerenciamento";
+        $h1_titulo = "Dashboard";
         
         require VIEW . "Admin/dashboard.php";
     }

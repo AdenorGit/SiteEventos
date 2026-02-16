@@ -12,7 +12,7 @@
 
         <div class="col-11 col-md-6 col-lg-4 mt-1">
 
-                <h1 class="mb-5 text-center">Login</h1>
+                <h1 class="mb-5 text-center"><?= $h1_titulo ?></h1>
 
                 <form>
                     <div class="mb-3">
