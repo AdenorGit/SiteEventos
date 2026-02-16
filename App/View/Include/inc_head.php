@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= $title ?></title>
 
-    <link rel="stylesheet" href="../../../Public/Assets/Css/reset.css">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="/App/Default/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <script src="/App/Default/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Comun -->
     <link rel="stylesheet" href="../../../Public/Assets/Css/style.css">
     <script src="../../../Public/Assets/Js/script.js" defer></script>
         
