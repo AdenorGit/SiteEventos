@@ -5,3 +5,11 @@
 .w-10 {
     width: 10%;
 }
+
+.card-titulo {
+    height: 80px;
+}
+
+.card-desc {
+    height: 100px;
+}

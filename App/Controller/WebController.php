@@ -2,12 +2,19 @@
 
 namespace App\Controller;
 
+use App\Model\UserModel;
+use App\Model\EventModel;
+
+
 class WebController
 {
     public function start()
     {
         $title = "EVENTIFY - Site de Eventos";
-        
+
+        $model = new EventModel();
+        $eventos = $model->listarTodosEventos();
+       
         require VIEW . "Web/start.php";
     }
 

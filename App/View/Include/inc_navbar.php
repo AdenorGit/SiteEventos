@@ -17,9 +17,6 @@
                         <a class="nav-link" href="/dashboard">Dashboard</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin">Admin</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="/logout">Logout</a>
                     </li>
                 </ul>
