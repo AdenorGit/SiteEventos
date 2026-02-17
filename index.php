@@ -11,4 +11,3 @@ if (session_status() !== PHP_SESSION_ACTIVE) {
 require 'vendor/autoload.php';
 require 'App/Settings/config.php';
 require 'App/Router/router.php';
-
