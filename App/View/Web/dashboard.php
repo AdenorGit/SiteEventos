@@ -17,6 +17,7 @@
                         <thead class="sticky-top table-success">
                             <tr>
                                 <th scope="col" class="w-5">ID</th>
+                                <th scope="col" class="w-20">AUTOR</th>
                                 <th scope="col">TITULO</th>
                                 <th scope="col" class="w-10">DATA</th>
                                 <th scope="col" class="w-10">ATIVO</th>
@@ -25,135 +26,24 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Titulo do Evento</td>
-                                <td>01/01/2026</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Titulo do Evento</td>
-                                <td>01/01/2026</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Titulo do Evento</td>
-                                <td>01/01/2026</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Titulo do Evento</td>
-                                <td>01/01/2026</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Titulo do Evento</td>
-                                <td>01/01/2026</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Titulo do Evento</td>
-                                <td>01/01/2026</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Titulo do Evento</td>
-                                <td>01/01/2026</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Titulo do Evento</td>
-                                <td>01/01/2026</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Titulo do Evento</td>
-                                <td>01/01/2026</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Titulo do Evento</td>
-                                <td>01/01/2026</td>
-                                <td>Ativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
+                            <?php
+                                foreach ($eventos as $evento) {
+                                    echo '
+                                        <tr>
+                                            <th scope="row">'.$evento["eve_id"].'</th>
+                                            <td>'.$evento["usu_nome"].'</td>
+                                            <td>'.mb_strimwidth($evento["eve_titulo"],0, 50, '...').'</td>
+                                            <td>'.date('d/m/Y', strtotime($evento["eve_data"])).'</td>';
+                                            if($evento["eve_ativo"] == 1) {
+                                                echo '<td>Ativo</td>';
+                                            } else {
+                                                echo '<td class="text-danger">Inativo</td>';
+                                            }
+                                            echo '<td><button type="button" class="btn btn-warning">Editar</button></td>
+                                            <td><button type="button" class="btn btn-danger">Excluir</button></td>
+                                        </tr>';
+                                }
+                            ?>
                             
                         </tbody>
                         </tbody>
