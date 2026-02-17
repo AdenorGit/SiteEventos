@@ -16,13 +16,13 @@
                     <table class="table">
                         <thead class="sticky-top table-success">
                             <tr>
-                                <th scope="col">ID</th>
+                                <th scope="col" class="w-5">ID</th>
                                 <th scope="col">NOME</th>
                                 <th scope="col">EMAIL</th>
                                 <th scope="col">TIPO</th>
-                                <th scope="col">ATIVO</th>
-                                <th scope="col">EDITAR</th>
-                                <th scope="col">EXCLUIR</th>
+                                <th scope="col" class="w-10">ATIVO</th>
+                                <th scope="col" class="w-10">EDITAR</th>
+                                <th scope="col" class="w-10">EXCLUIR</th>
                             </tr>
                         </thead>
                         <tbody>

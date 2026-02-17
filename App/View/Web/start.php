@@ -10,7 +10,7 @@
         <h1 class="mb-5">Eventos</h1>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-lg-4 g-4">
             <div class="col">
-                <div class="card h-100 ">
+                <div class="card h-100 shadow">
                     <img src="../../../Public/Assets/Img/card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title 1</h5>
@@ -22,7 +22,7 @@
             </div>
 
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 shadow">
                     <img src="../../../Public/Assets/Img/card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title 2</h5>
@@ -34,7 +34,7 @@
             </div>
 
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 shadow">
                     <img src="../../../Public/Assets/Img/card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title 2</h5>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 shadow">
                     <img src="../../../Public/Assets/Img/card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title 2</h5>
@@ -57,7 +57,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card h-100">
+                <div class="card h-100 shadow">
                     <img src="../../../Public/Assets/Img/card.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Card title 2</h5>
