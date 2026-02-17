@@ -16,21 +16,19 @@
                     <table class="table">
                         <thead class="sticky-top table-success">
                             <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">NOME</th>
-                                <th scope="col">EMAIL</th>
-                                <th scope="col">TIPO</th>
-                                <th scope="col">ATIVO</th>
-                                <th scope="col">EDITAR</th>
-                                <th scope="col">EXCLUIR</th>
+                                <th scope="col" class="w-5">ID</th>
+                                <th scope="col">TITULO</th>
+                                <th scope="col" class="w-10">DATA</th>
+                                <th scope="col" class="w-10">ATIVO</th>
+                                <th scope="col" class="w-10">EDITAR</th>
+                                <th scope="col" class="w-10">EXCLUIR</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <th scope="row">1</th>
-                                <td>Administrador</td>
-                                <td>admin@gmail.com</td>
-                                <td>Administrador</td>
+                                <td>Titulo do Evento</td>
+                                <td>01/01/2026</td>
                                 <td>Ativo</td>
                                 <td>
                                     <button type="button" class="btn btn-warning">Editar</button>
@@ -39,11 +37,11 @@
                                     <button type="button" class="btn btn-danger">Excluir</button>
                                 </td>
                             </tr>
+
                             <tr>
-                                <th scope="row">2</th>
-                                <td>Adenor Sousa</td>
-                                <td>adenor@gmail.com</td>
-                                <td>Usuário</td>
+                                <th scope="row">1</th>
+                                <td>Titulo do Evento</td>
+                                <td>01/01/2026</td>
                                 <td>Ativo</td>
                                 <td>
                                     <button type="button" class="btn btn-warning">Editar</button>
@@ -52,24 +50,11 @@
                                     <button type="button" class="btn btn-danger">Excluir</button>
                                 </td>
                             </tr>
+
                             <tr>
-                                <th scope="row">2</th>
-                                <td>José Sousa</td>
-                                <td>jose@gmail.com</td>
-                                <td>Usuário</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Adenor Sousa</td>
-                                <td>adenor@gmail.com</td>
-                                <td>Usuário</td>
+                                <th scope="row">1</th>
+                                <td>Titulo do Evento</td>
+                                <td>01/01/2026</td>
                                 <td>Ativo</td>
                                 <td>
                                     <button type="button" class="btn btn-warning">Editar</button>
@@ -78,24 +63,11 @@
                                     <button type="button" class="btn btn-danger">Excluir</button>
                                 </td>
                             </tr>
+
                             <tr>
-                                <th scope="row">2</th>
-                                <td>José Sousa</td>
-                                <td>jose@gmail.com</td>
-                                <td>Usuário</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Adenor Sousa</td>
-                                <td>adenor@gmail.com</td>
-                                <td>Usuário</td>
+                                <th scope="row">1</th>
+                                <td>Titulo do Evento</td>
+                                <td>01/01/2026</td>
                                 <td>Ativo</td>
                                 <td>
                                     <button type="button" class="btn btn-warning">Editar</button>
@@ -104,24 +76,11 @@
                                     <button type="button" class="btn btn-danger">Excluir</button>
                                 </td>
                             </tr>
+
                             <tr>
-                                <th scope="row">2</th>
-                                <td>José Sousa</td>
-                                <td>jose@gmail.com</td>
-                                <td>Usuário</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Adenor Sousa</td>
-                                <td>adenor@gmail.com</td>
-                                <td>Usuário</td>
+                                <th scope="row">1</th>
+                                <td>Titulo do Evento</td>
+                                <td>01/01/2026</td>
                                 <td>Ativo</td>
                                 <td>
                                     <button type="button" class="btn btn-warning">Editar</button>
@@ -130,24 +89,11 @@
                                     <button type="button" class="btn btn-danger">Excluir</button>
                                 </td>
                             </tr>
+
                             <tr>
-                                <th scope="row">2</th>
-                                <td>José Sousa</td>
-                                <td>jose@gmail.com</td>
-                                <td>Usuário</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Adenor Sousa</td>
-                                <td>adenor@gmail.com</td>
-                                <td>Usuário</td>
+                                <th scope="row">1</th>
+                                <td>Titulo do Evento</td>
+                                <td>01/01/2026</td>
                                 <td>Ativo</td>
                                 <td>
                                     <button type="button" class="btn btn-warning">Editar</button>
@@ -156,24 +102,11 @@
                                     <button type="button" class="btn btn-danger">Excluir</button>
                                 </td>
                             </tr>
+
                             <tr>
-                                <th scope="row">2</th>
-                                <td>José Sousa</td>
-                                <td>jose@gmail.com</td>
-                                <td>Usuário</td>
-                                <td>Inativo</td>
-                                <td>
-                                    <button type="button" class="btn btn-warning">Editar</button>
-                                </td>
-                                <td>
-                                    <button type="button" class="btn btn-danger">Excluir</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Adenor Sousa</td>
-                                <td>adenor@gmail.com</td>
-                                <td>Usuário</td>
+                                <th scope="row">1</th>
+                                <td>Titulo do Evento</td>
+                                <td>01/01/2026</td>
                                 <td>Ativo</td>
                                 <td>
                                     <button type="button" class="btn btn-warning">Editar</button>
@@ -182,12 +115,38 @@
                                     <button type="button" class="btn btn-danger">Excluir</button>
                                 </td>
                             </tr>
+
                             <tr>
-                                <th scope="row">2</th>
-                                <td>José Sousa</td>
-                                <td>jose@gmail.com</td>
-                                <td>Usuário</td>
-                                <td>Inativo</td>
+                                <th scope="row">1</th>
+                                <td>Titulo do Evento</td>
+                                <td>01/01/2026</td>
+                                <td>Ativo</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Titulo do Evento</td>
+                                <td>01/01/2026</td>
+                                <td>Ativo</td>
+                                <td>
+                                    <button type="button" class="btn btn-warning">Editar</button>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn btn-danger">Excluir</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Titulo do Evento</td>
+                                <td>01/01/2026</td>
+                                <td>Ativo</td>
                                 <td>
                                     <button type="button" class="btn btn-warning">Editar</button>
                                 </td>
