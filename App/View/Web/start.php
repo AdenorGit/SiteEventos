@@ -5,6 +5,13 @@
 <?php include VIEW . "Include/inc_msg.php" ?>
 
 <main class="flex-shrink-0 py-5 mt-5">
+    <h1>
+        <?php 
+            if(isset($_SESSION['usu_nome'])) { 
+                echo $_SESSION['usu_nome'];
+            }
+        ?>
+    </h1>
 
     <div class="container">
         <h1 class="mb-5">Eventos</h1>

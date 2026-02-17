@@ -11,8 +11,8 @@
         <div class="col-11 col-md-6 col-lg-4 mt-1">
 
                 <h1 class="mb-5 text-center"><?= $h1_titulo ?></h1>
-
-                <form>
+                
+                <form method="POST">
                     <div class="mb-3">
                         <label for="email" class="form-label">Email</label>
                         <input type="email" class="form-control" name="email" id="email">
@@ -23,7 +23,7 @@
                     </div>
 
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-primary">Login</button>
+                        <button type="submit" class="btn btn-primary" id="but-login">Login</button>
                     </div>
                 </form>
 
@@ -31,6 +31,8 @@
         </div>
     </div>
 </main>
+
+<?= $js_user_login ?>
 
 
 <?php include VIEW . "Include/inc_footer.php" ?>

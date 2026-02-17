@@ -2,9 +2,7 @@
 
 namespace App\Controller;
 
-use App\Model\UserModel;
 use App\Model\EventModel;
-
 
 class WebController
 {
@@ -22,7 +20,8 @@ class WebController
     {
         $title = "Titulo da Página";
         $h1_titulo = "Login";
-        
+        $js_user_login = '<script src="/App/Default/Assets/Js/UserLogin.js" defer></script>';
+
         require VIEW . "Web/login.php";
     }
 
@@ -46,24 +45,31 @@ class WebController
 
     public function logout()
     {
+        // Garante que a sessão esteja acessível
+        if (session_status() === PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        // Remove todas as variáveis de sessão
+        $_SESSION = array();
+
+        // Destrói o cookie de sessão no navegador do usuário
+        if (ini_get("session.use_cookies")) {
+            $params = session_get_cookie_params();
+            setcookie(session_name(), '', time() - 42000,
+                $params["path"], $params["domain"],
+                $params["secure"], $params["httponly"]
+            );
+        }
+
+        // Destrói a sessão no servidor
+        session_destroy();
+
+        // Redireciona para a home
         header("Location: /");
+        exit;
     }
 
-    // public function admin()
-    // {
-    //     $title = "Administração";
-    //     $h1_titulo = "Login";
-        
-    //     require VIEW . "Admin/admin.php";
-    // }
-
-    // public function adminCadastrar()
-    // {
-    //     $title = "Administração";
-    //     $h1_titulo = "Cadastrar";
-        
-    //     require VIEW . "Admin/cadastrar.php";
-    // }
 
     public function adminDashboard()
     {

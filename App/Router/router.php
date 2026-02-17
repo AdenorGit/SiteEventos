@@ -11,10 +11,10 @@ Router::get('/cadastrar', 'WebController@cadastrar');
 Router::get('/dashboard', 'WebController@dashboard');
 Router::get('/logout', 'WebController@logout');
 
-// Router::get('/admin', 'WebController@admin');
-// Router::get('/admin/cadastrar', 'WebController@adminCadastrar');
 Router::get('/admin/dashboard', 'WebController@adminDashboard');
 Router::get('/admin/logout', 'WebController@adminLogout');
+
+Router::post('/user/login', 'UserController@login');
 
 
 Router::error(function() {

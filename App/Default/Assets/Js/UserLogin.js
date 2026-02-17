@@ -1,0 +1,54 @@
+class UserLogin {
+    constructor() {
+        // Seleciona o formulário ou o botão
+        this.form = document.querySelector('form'); 
+        this.email = document.getElementById('email');
+        this.senha = document.getElementById('senha');
+
+        this.init();
+    }
+
+    init() {
+        // Adiciona o evento no submit do formulário para capturar o "Enter" também
+        this.form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            this.carregaRequisicao();
+        });
+    }
+
+    async carregaRequisicao() {
+        try {
+            // Prepara os dados para o POST
+            const formData = new FormData();
+            formData.append('email', this.email.value);
+            formData.append('senha', this.senha.value);
+
+            const resposta = await fetch('/user/login', {
+                method: 'POST',
+                body: formData
+            });
+
+            if (!resposta.ok) {
+                throw new Error(`Erro HTTP: ${resposta.status}`);
+            }
+
+            const dados = await resposta.json();
+
+            if (dados.status === 'success') {
+                // Redireciona se o login for verdadeiro
+                window.location.href = '/';
+            } else {
+                // Exemplo de tratamento de erro vindo do PHP
+                alert(dados.message || 'E-mail ou senha incorretos');
+            }
+
+        } catch (error) {
+            console.error('Erro na requisição:', error);
+            alert('Não foi possível conectar ao servidor.');
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    new UserLogin();
+});

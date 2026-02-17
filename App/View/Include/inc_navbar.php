@@ -7,10 +7,31 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/login">Login</a>
-                    </li>
-                    <li class="nav-item">
+                    </li> -->
+                    <?php
+                    if (!isset($_SESSION['usu_nome'])) {
+                        echo '
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                        ';
+                    } else {
+                        echo '
+                             <li class="nav-item">
+                                <a class="nav-link" href="/cadastrar">Cadastrar</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/dashboard">Dashboard</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/logout">Logout</a>
+                            </li>
+                        ';
+                    }
+                    ?>
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="/cadastrar">Cadastrar</a>
                     </li>
                     <li class="nav-item">
@@ -18,7 +39,7 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/logout">Logout</a>
-                    </li>
+                    </li> -->
                 </ul>
                 <?php
                 if (basename($_SERVER['PHP_SELF'], '.php') == 'index') {
