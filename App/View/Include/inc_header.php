@@ -1,8 +1,8 @@
-<header>
-  <nav>
+<header class="navbar">
+  <nav class="nav-container">
     <div>
-      <a href="/">
-        <img src="../../../Public/Assets/Img/logo.png" alt="Logo">
+      <a href="/" class="brand">
+        <img class="logo-img" src="../../../Public/Assets/Img/logo.png" alt="Logo">
         <span><?= NOME_SITE ?></span>
       </a>
     </div>
@@ -13,16 +13,17 @@
       <span></span>
     </div>
 
-    <div>
+    <div class="nav-menu">
       <ul>
-        <li><a href="LOGIN"></a></li>
-        <li><a href="CADASTRAR"></a></li>
-        <li><a href="DSHBOARD"></a></li>
+        <li><a href="LOGIN">LOGIN</a></li>
+        <li><a href="CADASTRAR">CADASTRAR</a></li>
+        <li><a href="DSHBOARD">DSHBOARD</a></li>
+        <li><a href="LOGOUT">LOGOUT</a></li>
       </ul>
 
       <form action="">
-        <label for="">Procurar</label>
-        <input type="search" name="" id="">
+        <label class="txt-claro mr-10 txt-bold" for="">PROCURAR</label>
+        <input class="input-search" type="search" name="" id="" placeholder="Pesquisar...">
       </form>
     </div>
   </nav>
