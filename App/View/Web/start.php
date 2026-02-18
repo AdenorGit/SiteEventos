@@ -8,55 +8,21 @@
 
     <div class="container-card">
        <div class="group-card">
-        <article class="card">
-            <img src="../../../Public/Assets/Img/default_img_evento.png" alt="">
-            <div class="card-content">
-                <h3>Titulo</h3>
-                <p class="autor">Autor</p>
-                <p class="data">01/01/2001</p>
-                <p class="desc">Descrição sobre o evento. com mais teds hdsdhsjh dgshggsg hsjhjkhshdjksj.</p>
-            </div>
-        </article>
 
-        <article class="card">
-            <img src="../../../Public/Assets/Img/default_img_evento.png" alt="">
-            <div class="card-content">
-                <h3>Titulo</h3>
-                <p class="autor">Autor</p>
-                <p class="data">01/01/2001</p>
-                <p class="desc">Descrição sobre o evento. com mais teds hdsdhsjh dgshggsg hsjhjkhshdjksj.</p>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="../../../Public/Assets/Img/default_img_evento.png" alt="">
-            <div class="card-content">
-                <h3>Titulo</h3>
-                <p class="autor">Autor</p>
-                <p class="data">01/01/2001</p>
-                <p class="desc">Descrição sobre o evento. com mais teds hdsdhsjh dgshggsg hsjhjkhshdjksj.</p>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="../../../Public/Assets/Img/default_img_evento.png" alt="">
-            <div class="card-content">
-                <h3>Titulo</h3>
-                <p class="autor">Autor</p>
-                <p class="data">01/01/2001</p>
-                <p class="desc">Descrição sobre o evento. com mais teds hdsdhsjh dgshggsg hsjhjkhshdjksj.</p>
-            </div>
-        </article>
-
-        <article class="card">
-            <img src="../../../Public/Assets/Img/default_img_evento.png" alt="">
-            <div class="card-content">
-                <h3>Titulo</h3>
-                <p class="autor">Autor</p>
-                <p class="data">01/01/2001</p>
-                <p class="desc">Descrição sobre o evento. com mais teds hdsdhsjh dgshggsg hsjhjkhshdjksj.</p>
-            </div>
-        </article>
+        <?php
+            foreach ($eventos as $evento) {
+                echo '<article class="card">';
+                echo '<img src="../../../Public/Assets/Img/'.$evento['eve_img'].'" alt="Evento">';
+                echo '<div class="card-content">';
+                echo '<h3>'.mb_strimwidth($evento["eve_titulo"],0, 40, '...').'</h3>';
+                echo '<p class="autor">'.$evento['usu_nome'].'</p>';
+                echo '<p class="data">'.date('d/m/Y', strtotime($evento["eve_data"])).'</p>';
+                echo '<p class="desc">'.mb_strimwidth($evento["eve_desc"],0, 120, '...').'</p>';
+                echo '</div>';
+                echo '</article>';
+            }
+        ?>
+        
        </div>
     </div>
    </section>

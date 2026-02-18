@@ -1,21 +1,21 @@
 :root {
-    --bg-1: #13293d;
-    --bg-2: #006494;
-    --bg-3: #247ba0;
-    --bg-4: #1b98e0;
-    --bg-5: #e8f1f8;
-    --bg-bg: #f6f6f6;
-
-    --txt-txt: #081725;
-    --txt-txt-l: #ffffff;
-    --txt-link: #a5b7c2;
-    --txt-link-h: #ffffff;
+    --cor-1: #13293d;
+    --cor-2: #006494;
+    --cor-3: #247ba0;
+    --cor-4: #1b98e0;
+    --cor-5: #e8f1f8;
+    --cor-6: #f6f6f6;
+    --cor-7: #0a2741;
+    --cor-8: #cee4e646;
+    --cor-9: #a5b7c2;
+    --cor-10: #ffffff;
+    --cor-11: #cbd8e0;
 }
 
 html,body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-bg);
-    color: var(--txt-txt);
+    background-color: var(--cor-6);
+    color: var(--cor-7);
     line-height: 1.6;
 }
 
@@ -40,17 +40,17 @@ main section {
 
 main section h1 {
     margin-bottom: 2rem;
-    color: var(--bg-3);
+    color: var(--cor-3);
     text-align: left;
     font-size: 2rem;
-    border-left: var(--bg-2) solid 6px;
+    border-left: var(--cor-2) solid 6px;
     padding-left: 10px
 }
 
 /* Geral -------------------------------------------------------------------------- */
 
     .txt-claro {
-        color: var(--txt-txt-l);
+        color: var(--cor-8);
     }
 
     .mr-10 {
@@ -66,10 +66,10 @@ main section h1 {
 
 .input-search {
     padding: 5px;
-    color: var(--txt-txt);
+    color: var(--cor-7);
     font-size: 1.2rem;
     border-radius: 5px;
-    background-color: var(--bg-bg);
+    background-color: var(--cor-6);
 }
 
 /* Reader - Navbar ---------------------------------------------------------------- */
@@ -79,7 +79,7 @@ main section h1 {
         top: 0;
         width: 100%;
         height: 70px;
-        background-color: var(--bg-1);
+        background-color: var(--cor-1);
         box-shadow: 0 4px 10px black;
         z-index: 1000;
         display: flex;
@@ -100,7 +100,7 @@ main section h1 {
         display: flex;
         align-items: center;
         text-decoration: none;
-        color: var(--txt-link);
+        color: var(--cor-11);
         font-weight: bold;
         font-size: 1.5rem;
     }
@@ -121,7 +121,7 @@ main section h1 {
     .menu-toggle span {
         width: 25px;
         height: 3px;
-        background-color: var(--txt-txt-l);
+        background-color: var(--cor-8);
         margin: 2px 0;
         transition: 0.3s;
         border-radius: 3px;
@@ -149,16 +149,16 @@ main section h1 {
 
     .nav-menu ul li a {
         text-decoration: none;
-        color: var(--txt-link);
+        color: var(--cor-9);
         font-size: 1rem;
         transition: color 0.3ms;
         padding-bottom: 5px;
     }
 
     .nav-menu ul li a:hover {
-        color: var(--txt-link-h);
+        color: var(--cor-10);
         transition: color 0.3ms;
-        border-bottom: 2px solid var(--txt-link-h);
+        border-bottom: 2px solid var(--cor-10);
     }
 
     /* Botão de fechar para mobile */
@@ -168,7 +168,7 @@ main section h1 {
         top: 20px;
         right: 20px;
         font-size: 2rem;
-        color: var(--txt-txt-l);
+        color: var(--cor-8);
         cursor: pointer;
         z-index: 1002;
     }
@@ -194,7 +194,7 @@ main section h1 {
         background: white;
         border-radius: 10px;
         overflow: hidden;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.303);
         width: 100%;
         max-width: 100%;
         display: flex;
@@ -239,7 +239,7 @@ main section h1 {
 
     .card-content h3 {
         margin-bottom: 0.5rem;
-        color: var(--txt-txt);
+        color: var(--cor-7);
         font-size: 1.2rem;
         font-weight: bold;
         
@@ -247,7 +247,7 @@ main section h1 {
     }
 
     .card:hover .card-content h3 {
-        color: var(--bg-4);
+        color: var(--cor-4);
     }
 
     .autor, .data {
@@ -255,12 +255,12 @@ main section h1 {
     }
 
     .card:hover .autor {
-        color: var(--bg-3);
+        color: var(--cor-3);
         transform: translateX(3px);
     }
 
     .card:hover .data {
-        color: var(--bg-2);
+        color: var(--cor-2);
         transform: translateX(3px);
     }
 
@@ -316,8 +316,8 @@ main section h1 {
 /* Footer ------------------------------------------------------------------------ */
 
     footer {
-        background-color: var(--bg-1);        
-        color: var(--txt-txt-l);
+        background-color: var(--cor-1);        
+        color: var(--cor-8);
         text-align: center;
         padding: 1.5rem;
         margin-top: auto;
@@ -360,7 +360,7 @@ main section h1 {
             width: 80%;
             max-width: 400px;
             height: 100vh;
-            background-color: var(--bg-1);
+            background-color: var(--cor-1);
             flex-direction: column;
             justify-content: flex-start;
             padding: 80px 20px 30px;
@@ -384,7 +384,7 @@ main section h1 {
             top: 20px;
             right: 20px;
             font-size: 2rem;
-            color: var(--txt-txt-l);
+            color: var(--cor-8);
             cursor: pointer;
             z-index: 1002;
             width: 40px;
@@ -421,7 +421,7 @@ main section h1 {
         }
 
         .nav-menu ul li a:hover {
-            border-bottom: 1px solid var(--txt-link-h);
+            border-bottom: 1px solid var(--cor-10);
             background-color: rgba(255,255,255,0.05);
             padding-left: 20px;
         }
@@ -437,7 +437,7 @@ main section h1 {
 
         .nav-menu form label {
             font-size: 1.1rem;
-            color: var(--txt-txt-l);
+            color: var(--cor-8);
         }
 
         .input-search {
@@ -450,7 +450,7 @@ main section h1 {
         }
 
         .input-search:focus {
-            border-color: var(--bg-4);
+            border-color: var(--cor-4);
             outline: none;
         }
 
