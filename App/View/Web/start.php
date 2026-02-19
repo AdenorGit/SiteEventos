@@ -5,6 +5,7 @@
 <main>
    <section>
     <h1>EVENTOS</h1>
+    <?= isset($_SESSION['usu_nome']) ? "<h2>USUÁRIO: {$_SESSION['usu_nome']}</h2>" : "" ?>
 
     <div class="container-card">
        <div class="group-card">
