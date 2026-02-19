@@ -4,6 +4,8 @@ class UserLogin {
         this.form = document.querySelector('.form-login'); 
         this.email = document.getElementById('email');
         this.senha = document.getElementById('senha')
+        this.msg = document.getElementById('msg');
+        this.msg_p = document.getElementById('msg-p');
 
         this.init();
     }
@@ -14,6 +16,12 @@ class UserLogin {
             e.preventDefault();
             this.carregaRequisicao();
         });
+    }
+
+    funMsg(msg) {
+        this.msg.style.display = 'flex';
+        this.msg_p.textContent = msg;
+        
     }
 
     async carregaRequisicao() {
@@ -40,12 +48,12 @@ class UserLogin {
                 
             } else {
                 // Exemplo de tratamento de erro vindo do PHP
-                alert(dados.message || 'E-mail ou senha incorretos');
+                this.funMsg('Usuário ou senha incorretos!');
             }
 
         } catch (error) {
             console.error('Erro na requisição:', error);
-            alert('Não foi possível conectar ao servidor.');
+            
         }
     }
 }

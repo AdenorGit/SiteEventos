@@ -3,7 +3,13 @@
 <?php include VIEW . "Include/inc_header.php"; ?>
 
 <main>
+    
    <section>
+
+    <div class="msg" id="msg">
+        <p id="msg-p">Mensagem de teste</p>
+    </div>
+
     <h1>EVENTOS</h1>
     <?= isset($_SESSION['usu_nome']) ? "<h2>USUÁRIO: {$_SESSION['usu_nome']}</h2>" : "" ?>
 

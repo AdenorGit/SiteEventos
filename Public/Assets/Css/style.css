@@ -10,6 +10,7 @@
     --cor-9: #a5b7c2;
     --cor-10: #ffffff;
     --cor-11: #cbd8e0;
+    --cor-12: #9bff0545;
 }
 
 html,body {
@@ -39,7 +40,7 @@ main section {
 }
 
 main section h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     color: var(--cor-7);
     text-align: left;
     font-size: 2rem;
@@ -51,7 +52,7 @@ main section h2 {
     margin-bottom: 2rem;
     color: var(--cor-3);
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-left: var(--cor-3) solid 6px;
     padding-left: 10px;
     text-transform: uppercase;
@@ -69,6 +70,16 @@ main section h2 {
 
     .txt-bold {
         font-weight: bold;
+    }
+
+    .msg {
+        display: none;
+        padding: 10px;
+        background-color: var(--cor-12);
+        border-radius: 5px;
+        border: var(--cor-10) solid 2px;
+        box-shadow: 0 1px 5px rgba(0, 0, 0, 0.188);
+        margin-bottom: 1rem;
     }
 
 

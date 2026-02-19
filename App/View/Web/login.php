@@ -4,6 +4,11 @@
 
 <main>
     <section>
+
+    <div class="msg" id="msg">
+        <p id="msg-p">Mensagem de teste</p>
+    </div>
+
         <h1>LOGIN</h1>
 
         <div class="container-login">
