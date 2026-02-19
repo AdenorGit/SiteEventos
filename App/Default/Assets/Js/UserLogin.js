@@ -1,9 +1,9 @@
 class UserLogin {
     constructor() {
         // Seleciona o formulário ou o botão
-        this.form = document.querySelector('form'); 
+        this.form = document.querySelector('.form-login'); 
         this.email = document.getElementById('email');
-        this.senha = document.getElementById('senha');
+        this.senha = document.getElementById('senha')
 
         this.init();
     }
@@ -37,6 +37,7 @@ class UserLogin {
             if (dados.status === 'success') {
                 // Redireciona se o login for verdadeiro
                 window.location.href = '/';
+                
             } else {
                 // Exemplo de tratamento de erro vindo do PHP
                 alert(dados.message || 'E-mail ou senha incorretos');

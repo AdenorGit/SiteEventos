@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="../../../Public/Assets/Css/reset.css">
     <link rel="stylesheet" href="../../../Public/Assets/Css/style.css">
-
+    
     <script src="../../../Public/Assets/Js/script.js"></script>
 </head>
 

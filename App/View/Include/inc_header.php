@@ -15,10 +15,14 @@
 
     <div class="nav-menu">
       <ul>
-        <li><a href="/login">LOGIN</a></li>
-        <li><a href="/cadastrar">CADASTRAR</a></li>
-        <li><a href="/dashboard">DSHBOARD</a></li>
-        <li><a href="/logout">LOGOUT</a></li>
+        <?php
+          if(!isset($_SESSION['usu_nome'])){
+            echo '<li><a href="/login">LOGIN</a></li>';
+          }else{
+            echo '<li><a href="/dashboard">DSHBOARD</a></li>';
+            echo '<li><a href="/logout">LOGOUT</a></li>';
+          }
+        ?>
       </ul>
 
       <form action="">

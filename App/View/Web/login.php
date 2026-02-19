@@ -7,7 +7,7 @@
         <h1>LOGIN</h1>
 
         <div class="container-login">
-            <form class="form-login" action="" method="post">
+            <form class="form-login" method="POST">
                 <div class="group-form">
                     <label for="email">Email</label>
                     <input type="email" name="email" id="email" placeholder="Digite seu email" required>
@@ -16,11 +16,13 @@
                     <label for="senha">Senha</label>
                     <input type="password" name="senha" id="senha" required>
                 </div>
-                <button type="button">Login</button>
+                <button type="submit">Login</button>
             </form>
         </div>
 
     </section>
 </main>
+
+<?= $js_user_login ?? '' ?>
 
 <?php include VIEW . "Include/inc_footer.php"; ?>
