@@ -72,6 +72,59 @@ main section h1 {
     background-color: var(--cor-6);
 }
 
+/* Formulário Login --------------------------------------------------------------- */
+
+.container-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 400px);
+}
+
+.form-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.group-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.group-form input {
+    padding: 5px;
+    color: var(--cor-7);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: var(--cor-9) solid 1px;
+    background-color: var(--cor-8);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.188);
+}
+
+.form-login button {
+    padding: 10px 20px;
+    color: var(--cor-10);
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: var(--cor-9) solid 1px;
+    background-color: var(--cor-2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.188);
+    cursor: pointer;
+}
+
+.form-login button:hover {
+    background-color: var(--cor-3);
+}
+
+
+
+
 /* Reader - Navbar ---------------------------------------------------------------- */
 
     .navbar {
@@ -265,54 +318,34 @@ main section h1 {
     }
 
     .autor {
-        color: #666;
+        color: var(--cor-9);
         font-size: 0.9rem;
         margin-bottom: 0.2rem;
     }
 
     .data {
-        color: #999;
+        color: var(--cor-9);
         font-size: 0.8rem;
         margin-bottom: 0.8rem;
     }
 
     .desc {
-        color: #666;
+        color: var(--cor-1);
         line-height: 1.5;
         font-size: 0.9rem;
         overflow: hidden;
-        display: -webkit-box;
+        /* display: -webkit-box;
         -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
+        -webkit-box-orient: vertical; */
         
         transition: color 0.3s ease;
     }
 
     .card:hover .desc {
-        color: #444;
+        color: var(--cor-7);
     }
 
-    /* .card::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 10px;
-        border: 2px solid transparent;
-        background: linear-gradient(135deg, var(--bg-5), var(--bg-1)) border-box;
-        -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-        -webkit-mask-composite: xor;
-        mask-composite: exclude;
-        opacity: 0;
-        transition: opacity 0.3s ease;
-        pointer-events: none;
-    } */
-
-
-
-    
+   
 /* Footer ------------------------------------------------------------------------ */
 
     footer {

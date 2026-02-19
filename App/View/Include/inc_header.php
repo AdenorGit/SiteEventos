@@ -15,10 +15,10 @@
 
     <div class="nav-menu">
       <ul>
-        <li><a href="LOGIN">LOGIN</a></li>
-        <li><a href="CADASTRAR">CADASTRAR</a></li>
-        <li><a href="DSHBOARD">DSHBOARD</a></li>
-        <li><a href="LOGOUT">LOGOUT</a></li>
+        <li><a href="/login">LOGIN</a></li>
+        <li><a href="/cadastrar">CADASTRAR</a></li>
+        <li><a href="/dashboard">DSHBOARD</a></li>
+        <li><a href="/logout">LOGOUT</a></li>
       </ul>
 
       <form action="">
