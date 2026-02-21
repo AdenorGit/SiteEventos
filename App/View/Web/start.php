@@ -13,6 +13,12 @@
     <h1>EVENTOS</h1>
     <?= isset($_SESSION['usu_nome']) ? "<h2>USUÁRIO: {$_SESSION['usu_nome']}</h2>" : "" ?>
 
+    <div id="d-card-all" class="card-all">
+        <div id="d-card-all-cab" class="card-all-cab">
+            <span>Titulo do evento que foi informado...</span>
+        </div>
+    </div>
+
     <div class="container-card">
        <div class="group-card">
 

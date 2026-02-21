@@ -366,6 +366,31 @@ main section h2 {
         color: var(--cor-7);
     }
 
+    .card-all {
+        height: 400px;
+        background-color: var(--cor-11);
+        margin-bottom: 20px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    
+    }
+
+    .card-all-cab {
+        height: 40px;
+        background-color: var(--cor-2);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+
+    .card-all-cab span {
+        color: var(--cor-10);
+        font-size: 1rem;
+    }
+
+
+
    
 /* Footer ------------------------------------------------------------------------ */
 
