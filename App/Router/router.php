@@ -15,6 +15,10 @@ Router::get('/admin/dashboard', 'WebController@adminDashboard');
 
 Router::post('/user/login', 'UserController@login');
 
+Router::get('/teste', function() {
+    header("Location: /teste.php");
+});
+
 
 Router::error(function() {
     header("Location: /");

@@ -15,10 +15,10 @@ class EventModel
 
         try {
             // $sql = "SELECT * FROM t_eventos";
-            $sql = "SELECT t_eventos.*, t_usuarios.usu_nome
-                    FROM t_eventos 
-                    INNER JOIN t_usuarios
-                    ON t_eventos.eve_id_usu = t_usuarios.usu_id;
+            $sql = "SELECT evento.*, usuario.nome
+                    FROM evento 
+                    INNER JOIN usuario
+                    ON evento.fk_usuario = usuario.id;
 ";
             $stmt = $conn->prepare($sql);
             $stmt->execute();

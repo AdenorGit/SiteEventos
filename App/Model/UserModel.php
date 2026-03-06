@@ -14,7 +14,7 @@ class UserModel
         $conn = $db->getConnection();
 
          try {
-            $sql = "SELECT * FROM t_usuarios";
+            $sql = "SELECT * FROM usuario";
             $stmt = $conn->prepare($sql);
             $stmt->execute();
             
@@ -38,7 +38,7 @@ class UserModel
         $conn = $db->getConnection();
 
         try {
-            $sql = "SELECT * FROM t_usuarios WHERE usu_id = :id LIMIT 1";
+            $sql = "SELECT * FROM usuario WHERE id = :id LIMIT 1";
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':id', $id, PDO::PARAM_INT);
             $stmt->execute();
@@ -68,7 +68,7 @@ class UserModel
 
         try {
             // 1. Busca o usuário pelo e-mail
-            $stmt = $conn->prepare("SELECT usu_id, usu_nome, usu_senha FROM t_usuarios WHERE usu_email = :email LIMIT 1");
+            $stmt = $conn->prepare("SELECT id, nome, senha FROM usuario WHERE email = :email LIMIT 1");
             // Ajuste: Definindo explicitamente como STRING
             $stmt->bindParam(':email', $email, \PDO::PARAM_STR); 
             $stmt->execute();
@@ -77,15 +77,15 @@ class UserModel
 
             // 2. Verifica se o usuário existe e se a senha é compatível
             // O password_verify só funciona se a senha no banco foi criada com password_hash
-            if ($usuario && password_verify($senha, $usuario['usu_senha'])) {
+            if ($usuario && password_verify($senha, $usuario['senha'])) {
                 
                 // 3. Inicia a sessão e armazena os dados básicos
                 if (session_status() === PHP_SESSION_NONE) {
                     session_start();
                 }
 
-                $_SESSION['usu_id'] = $usuario['usu_id'];
-                $_SESSION['usu_nome'] = $usuario['usu_nome'];
+                $_SESSION['usu_id'] = $usuario['id'];
+                $_SESSION['usu_nome'] = $usuario['nome'];
 
                 return true; // Login bem-sucedido
             }
