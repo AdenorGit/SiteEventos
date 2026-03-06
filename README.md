@@ -26,8 +26,6 @@ EVENTIFI é uma plataforma web para gerenciamento e divulgação de eventos. Des
 
 - Composer: 2.9.5
 
-- Front-end: Bootstrap 5.3.8
-
 - Roteamento: pecee/simple-router
 
 ## Status do Projeto
